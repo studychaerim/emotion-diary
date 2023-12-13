@@ -9,6 +9,9 @@ import Edit from './pages/Edit';
 import Diary from './pages/Diary';
 
 function App() {
+  const env = process.env;
+  env.PUBLIC_URL = env.PUBLIC_URL || '';
+
   return (
     <BrowserRouter>
       <div className="App">
